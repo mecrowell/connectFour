@@ -1,0 +1,22 @@
+body {
+    font-family: monospace;
+    text-align: center;
+}
+#wrapper {
+    display: flex;
+    flex-direction: row;
+    background: lightgray;
+    height: 33.2em;
+    width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}  
+.columns {
+    display: flex;
+    border: .03em solid black;
+    height: auto;
+    width: 6em;
+}
+
+

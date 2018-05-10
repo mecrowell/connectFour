@@ -1,5 +1,6 @@
 body {
     text-align: center;
+    background: #dfe3e6;
 }
 
 h1 {
@@ -8,6 +9,7 @@ h1 {
     font-stretch: condensed;
     margin-bottom: 0;
     font-family: 'Luckiest Guy', cursive;
+    color:#1c5ddd;
 }
 
 #board {

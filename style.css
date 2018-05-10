@@ -7,7 +7,11 @@ h1 {
     font-size: 4em;
     font-weight: bolder;
     font-stretch: condensed;
-    margin-bottom: .2em;
+    margin-bottom: 0;
+}
+
+h3 {
+    margin: 0;
 }
 
 #board {
@@ -31,7 +35,6 @@ h1 {
     margin-right: 2px;
     position: relative;
     align-items: center;
-    z-index: 1;
 }
 
 #reset {
@@ -62,12 +65,11 @@ h1 {
 }
 
 #winner {
-    position: absolute;
-    z-index: 3;
     font-size: 5em;
-    border: 1px solid black;
-    background: lightgray;
     text-align: center;
     display: none;
-    align-items: center;
+    border-radius: 50px;
+    padding: 20px; 
+    font-family: 'Erica One', cursive;
+    margin-top: -.5em;
 }

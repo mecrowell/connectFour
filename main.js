@@ -29,6 +29,16 @@ function endClick() {
     }
 }
 
+function resetGame() {
+    clickMode = "playerone"
+    winner.style.display = "none"
+    gameBoard = createBlankGameboard()
+
+    for (let column of columns) {
+        column.innerHTML = ""
+    }
+    startClick()
+}
 //combining win conditions to check win status
 
 function checkWinner() {
@@ -37,9 +47,12 @@ function checkWinner() {
         winner.style.display = "block";
         if (currentPlayer === "black") {
             winner.textContent = "Red Wins";
+            winner.style.color = "red"
         } else if (currentPlayer === "red") {
             winner.textContent = "Black Wins";
+            winner.style.color = "black";
         }
+        setTimeout(resetGame, 2000)
     }
 }
 
@@ -134,4 +147,15 @@ function checkDiagonalLeft() {
             }
         }
     }
+}
+
+function createBlankGameboard() {
+    return [ 
+        [ 0, 0, 0, 0, 0, 0, 0 ],
+        [ 0, 0, 0, 0, 0, 0, 0 ],
+        [ 0, 0, 0, 0, 0, 0, 0 ],
+        [ 0, 0, 0, 0, 0, 0, 0 ],
+        [ 0, 0, 0, 0, 0, 0, 0 ],
+        [ 0, 0, 0, 0, 0, 0, 0 ],
+    ]
 }

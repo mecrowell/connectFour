@@ -1,5 +1,4 @@
 body {
-    font-family: monospace;
     text-align: center;
 }
 
@@ -8,10 +7,7 @@ h1 {
     font-weight: bolder;
     font-stretch: condensed;
     margin-bottom: 0;
-}
-
-h3 {
-    margin: 0;
+    font-family: 'Luckiest Guy', cursive;
 }
 
 #board {
@@ -71,5 +67,20 @@ h3 {
     border-radius: 50px;
     padding: 20px; 
     font-family: 'Erica One', cursive;
-    margin-top: -.5em;
+    margin-top: -.3em;
+    margin-bottom: 0;
 }
+
+.gamePiece {
+    animation-name: fall-animation;
+    animation-duration: 500ms;
+  }
+  
+  @keyframes fall-animation {
+    from {
+        transform: translateY(-280px);
+    }
+    to {
+        transform: translateY(0);
+    }
+  }

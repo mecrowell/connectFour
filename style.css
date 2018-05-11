@@ -4,12 +4,12 @@ body {
 }
 
 h1 {
-    font-size: 4em;
-    font-weight: bolder;
-    font-stretch: condensed;
+    font-size: 6em;
     margin-bottom: 0;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Luckiest Guy', monospace;
     color:#1c5ddd;
+    font-variant: small-caps;
+    font-stretch: extra-expanded;
 }
 
 #board {
@@ -21,18 +21,25 @@ h1 {
     margin-right: auto;
     background: url(Connect4Board.png);
     z-index: 2;
+    border: 5px solid black;
+    border-radius: 15px;
 }
 
 .column {
     display: flex;
     flex-direction: column-reverse;
-    border: .03em solid darkblue;
+    border: 2px solid darkblue;
     height: auto;
     width: 91.42857143px;
-    margin-left: 2px;
-    margin-right: 2px;
+    margin-left: 1px;
+    margin-right: 1px;
     position: relative;
     align-items: center;
+    border-radius: 10px;
+}
+
+.column:hover {
+    box-shadow: 1px 0 10px rgb(28, 185, 224);
 }
 
 #reset {
@@ -63,19 +70,19 @@ h1 {
 }
 
 #winner {
-    font-size: 5em;
+    font-size: 2em;
     text-align: center;
     display: none;
     border-radius: 50px;
     padding: 20px; 
-    font-family: 'Erica One', cursive;
+    font-family: 'Luckiest Guy', monospace;
     margin-top: -.3em;
     margin-bottom: 0;
 }
 
 .gamePiece {
     animation-name: fall-animation;
-    animation-duration: 500ms;
+    animation-duration: 900ms;
   }
   
   @keyframes fall-animation {

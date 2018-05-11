@@ -52,7 +52,7 @@ function checkWinner() {
             winner.textContent = "Black Wins";
             winner.style.color = "black";
         }
-        setTimeout(resetGame, 2000)
+        setTimeout(resetGame, 3000)
     }
 }
 
